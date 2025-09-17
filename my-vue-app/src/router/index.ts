@@ -4,19 +4,20 @@ import Home from '@/views/Home.vue'
 import About from '@/views/About.vue'
 import Projects from '@/views/Projects.vue'
 import Contact from '@/views/Contact.vue'
+import Error from '@/views/Error.vue'
 
 const routes = [
     { path: '/', name: 'Home', component: Home },
     { path: '/about', name: 'About', component: About },
     { path: '/projects', name: 'Projects', component: Projects },
-    { path: '/contact', name: 'Contact', component: Contact }
+    { path: '/contact', name: 'Contact', component: Contact },
 ]
 
 const router = createRouter({
     history: createWebHistory(),
     routes,
     scrollBehavior() {
-        return { top: 0 }  // luôn cuộn lên đầu
+        return { top: 0 }
     }
 })
 

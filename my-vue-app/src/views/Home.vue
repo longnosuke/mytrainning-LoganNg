@@ -1,20 +1,15 @@
-<template>
-  <div>
-    <Navbar />
-    <Header />
-    <Footer />
-  </div>
-</template>
-
 <script>
-  import Navbar from '../components/Navbar.vue'
-  import Header from '../components/Header.vue'
-  import Footer from '../components/Footer.vue'
-  export default {
-    components: {
-      Navbar,
-      Header,
-      Footer
-    }
+  import DefaultLayout from "@/layouts/DefaultLayout.vue";
+export default {
+  components: {
+    DefaultLayout,
   }
+}
 </script>
+<template>
+    <DefaultLayout>
+      <section class="text-center py-5">
+        <h1>Welcome to Home</h1>
+      </section>
+    </DefaultLayout>
+</template>
